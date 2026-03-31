@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizSphere | Frontend Quiz Challenge</title>
+    <meta
+        name="description"
+        content="QuizSphere is a polished browser quiz app with progress tracking, instant review, and a static setup ready for GitHub hosting."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="hero panel">
+            <div class="hero__copy">
+                <p class="eyebrow">Interactive Assessment</p>
+                <h1>QuizSphere</h1>
+                <p class="hero__text">
+                    Test core frontend knowledge with a focused quiz flow, live progress, and a cleaner review experience.
+                </p>
+            </div>
+
+            <div class="hero__stats">
+                <article class="stat-card">
+                    <span class="stat-card__label">Questions</span>
+                    <strong class="stat-card__value" id="questionCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-card__label">Answered</span>
+                    <strong class="stat-card__value" id="answeredCount">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-card__label">Current Score</span>
+                    <strong class="stat-card__value" id="liveScore">0</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="quiz-layout">
+            <aside class="panel sidebar">
+                <div class="sidebar__header">
+                    <p class="eyebrow">Progress</p>
+                    <h2>Question Map</h2>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-card__top">
+                        <span id="progressLabel">Question 1 of 6</span>
+                        <span id="progressPercent">17%</span>
+                    </div>
+                    <div class="progress-track" aria-hidden="true">
+                        <div class="progress-track__fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <div class="question-pills" id="questionPills" aria-label="Question navigation"></div>
+            </aside>
+
+            <section class="panel quiz-panel" aria-labelledby="quizTitle">
+                <div class="quiz-panel__header">
+                    <div>
+                        <p class="eyebrow">Quiz Session</p>
+                        <h2 id="quizTitle">Frontend Fundamentals</h2>
+                    </div>
+                    <button class="ghost-button" id="restartButton" type="button">Restart</button>
+                </div>
+
+                <article class="question-card" id="questionCard">
+                    <div class="question-card__meta">
+                        <span class="question-card__badge" id="questionBadge">Question 1</span>
+                        <span class="question-card__category">Multiple Choice</span>
+                    </div>
+
+                    <h3 class="question-card__title" id="questionText"></h3>
+                    <div class="options" id="optionsContainer"></div>
+                </article>
+
+                <footer class="quiz-panel__footer">
+                    <button class="ghost-button" id="prevButton" type="button">Previous</button>
+                    <div class="quiz-panel__actions">
+                        <button class="ghost-button" id="submitButton" type="button">Submit Quiz</button>
+                        <button class="primary-button" id="nextButton" type="button">Next Question</button>
+                    </div>
+                </footer>
+            </section>
+        </section>
+
+        <section class="panel results-panel hidden" id="resultsPanel" aria-live="polite">
+            <div class="results-panel__header">
+                <div>
+                    <p class="eyebrow">Results</p>
+                    <h2>Your performance summary</h2>
+                </div>
+            </div>
+
+            <div class="results-grid">
+                <article class="result-card">
+                    <span class="result-card__label">Final Score</span>
+                    <strong class="result-card__value" id="finalScore">0 / 0</strong>
+                </article>
+                <article class="result-card">
+                    <span class="result-card__label">Accuracy</span>
+                    <strong class="result-card__value" id="accuracyScore">0%</strong>
+                </article>
+                <article class="result-card">
+                    <span class="result-card__label">Answered</span>
+                    <strong class="result-card__value" id="finalAnswered">0</strong>
+                </article>
+            </div>
+
+            <div class="review-list" id="reviewList"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
