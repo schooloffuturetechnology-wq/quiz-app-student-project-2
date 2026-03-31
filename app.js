@@ -58,6 +58,206 @@ const quizData = [
             d: "Positioning"
         },
         correct: "b"
+    },
+    {
+        question: "Which HTML tag is used to create a hyperlink?",
+        options: {
+            a: "<link>",
+            b: "<href>",
+            c: "<a>",
+            d: "<nav>"
+        },
+        correct: "c"
+    },
+    {
+        question: "Which property changes the text color in CSS?",
+        options: {
+            a: "font-color",
+            b: "text-color",
+            c: "foreground",
+            d: "color"
+        },
+        correct: "d"
+    },
+    {
+        question: "Which array method creates a new array with elements that pass a test?",
+        options: {
+            a: "filter()",
+            b: "find()",
+            c: "reduce()",
+            d: "forEach()"
+        },
+        correct: "a"
+    },
+    {
+        question: "What does the DOM stand for?",
+        options: {
+            a: "Document Object Model",
+            b: "Display Object Management",
+            c: "Digital Ordinance Model",
+            d: "Desktop Oriented Mode"
+        },
+        correct: "a"
+    },
+    {
+        question: "Which CSS value makes an element a flex container?",
+        options: {
+            a: "display: block",
+            b: "display: inline",
+            c: "display: flex",
+            d: "position: flex"
+        },
+        correct: "c"
+    },
+    {
+        question: "Which symbol is used for single-line comments in JavaScript?",
+        options: {
+            a: "<!-- -->",
+            b: "//",
+            c: "/* */",
+            d: "#"
+        },
+        correct: "b"
+    },
+    {
+        question: "Which method selects the first element matching a CSS selector?",
+        options: {
+            a: "getElementById()",
+            b: "querySelector()",
+            c: "querySelectorAll()",
+            d: "getElementsByClassName()"
+        },
+        correct: "b"
+    },
+    {
+        question: "Which input type is best for entering an email address?",
+        options: {
+            a: "type=\"text\"",
+            b: "type=\"email\"",
+            c: "type=\"mail\"",
+            d: "type=\"address\""
+        },
+        correct: "b"
+    },
+    {
+        question: "Which CSS unit is relative to the root font size?",
+        options: {
+            a: "em",
+            b: "px",
+            c: "rem",
+            d: "%"
+        },
+        correct: "c"
+    },
+    {
+        question: "Which JavaScript operator compares both value and type?",
+        options: {
+            a: "==",
+            b: "=",
+            c: "===",
+            d: "!="
+        },
+        correct: "c"
+    },
+    {
+        question: "Which HTML element is used for the largest heading?",
+        options: {
+            a: "<h6>",
+            b: "<heading>",
+            c: "<head>",
+            d: "<h1>"
+        },
+        correct: "d"
+    },
+    {
+        question: "Which CSS property controls the space inside an element’s border?",
+        options: {
+            a: "margin",
+            b: "padding",
+            c: "gap",
+            d: "spacing"
+        },
+        correct: "b"
+    },
+    {
+        question: "Which function runs code after a delay in JavaScript?",
+        options: {
+            a: "setDelay()",
+            b: "setTimeout()",
+            c: "setInterval()",
+            d: "delay()"
+        },
+        correct: "b"
+    },
+    {
+        question: "Which HTML attribute provides alternative text for an image?",
+        options: {
+            a: "title",
+            b: "src",
+            c: "alt",
+            d: "description"
+        },
+        correct: "c"
+    },
+    {
+        question: "Which CSS property rounds the corners of an element?",
+        options: {
+            a: "corner-radius",
+            b: "border-radius",
+            c: "radius",
+            d: "outline-radius"
+        },
+        correct: "b"
+    },
+    {
+        question: "Which JavaScript method adds an item to the end of an array?",
+        options: {
+            a: "push()",
+            b: "append()",
+            c: "add()",
+            d: "insert()"
+        },
+        correct: "a"
+    },
+    {
+        question: "Which tag is typically used to group navigation links?",
+        options: {
+            a: "<menu>",
+            b: "<section>",
+            c: "<nav>",
+            d: "<aside>"
+        },
+        correct: "c"
+    },
+    {
+        question: "Which CSS property defines the stacking order of positioned elements?",
+        options: {
+            a: "stack",
+            b: "layer",
+            c: "z-index",
+            d: "order"
+        },
+        correct: "c"
+    },
+    {
+        question: "Which JavaScript keyword stops a loop immediately?",
+        options: {
+            a: "stop",
+            b: "break",
+            c: "exit",
+            d: "return"
+        },
+        correct: "b"
+    },
+    {
+        question: "Which browser API stores key-value data with no expiration by default?",
+        options: {
+            a: "sessionStorage",
+            b: "cookies",
+            c: "localStorage",
+            d: "indexedCache"
+        },
+        correct: "c"
     }
 ];
 
